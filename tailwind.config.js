@@ -5,7 +5,11 @@ export default {
     "./index.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow: {
+        'react-glow': "10 10 10em #61dafbaa"
+      }
+    },
   },
   plugins: [],
 }
