@@ -4,3 +4,8 @@
 * {
   font-family: "Space Grotesk", sans-serif;
 }
+ 
+.react-typewriter-text{
+  margin-left: auto;
+  margin-right: auto;
+}

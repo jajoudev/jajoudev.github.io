@@ -1,27 +1,29 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import TechWrapper from "./components/TechWrapper";
-import Tech from "./components/Tech"
+import Skills from "./components/Skills";
+import ProjectsWrapper from "./components/ProjectsWrapper";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 import AdamImg from "/images/adam.png";
 
 function App() {
   return (
     <>
-      <Header />
-      <main>
+      <Header css="py-8" />
+      <main className="px-4">
         <Hero img={AdamImg} />
-        <hr className="mb-10 h-1 bg-white"/>
+        <hr className="mb-10 h-1 bg-white" />
         <TechWrapper>
-          <Tech tech="HTML" content="4 Years Experience"/>
-          <Tech tech="CSS" content="4 Years Experience"/>
-          <Tech tech="Javascript" content="4 Years Experience"/>
-          <Tech tech="Accessibility" content="4 Years Experience"/>
-          <Tech tech="React" content="3 Years Experience"/>
-          <Tech tech="Sass" content="3 Years Experience"/>
+          <Skills />
         </TechWrapper>
-        <hr className="mb-10 h-1 bg-white"/>
+        <hr className="mb-20 h-1 bg-white" />
+        <ProjectsWrapper>
+          <Projects />
+        </ProjectsWrapper>
       </main>
+      <Footer />
     </>
   );
 }

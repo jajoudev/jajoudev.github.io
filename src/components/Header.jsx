@@ -4,11 +4,11 @@ import { FaYoutube } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-function Navigation() {
+function Navigation({css}) {
   return (
     <>
       <header>
-        <nav className="pb-12">
+        <nav className={css}>
           <ul>
             <li className="text-white font-extrabold text-2xl text-center mb-5">
               adamkeyes
