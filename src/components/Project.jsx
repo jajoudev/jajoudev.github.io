@@ -4,7 +4,7 @@ function Project({ img, title, tags }) {
   return (
     <>
       <div className="flex flex-col mb-10">
-        <img src={img} alt="" />
+        <img src={img} alt="" className="mb-5" />
         <h3 className="text-white text-2xl font-bold uppercase mb-2">
           {title}
         </h3>
@@ -13,9 +13,9 @@ function Project({ img, title, tags }) {
             <span className="text-[#D9D9D9] text-lg">{tag}</span>
           ))}
         </div>
-        <div className="flex gap-8">
-          <Cta content="View Project" />
-          <Cta content="View Code" />
+        <div className="flex">
+          <Cta content="View Project" css="uppercase text-white underline underline-offset-8 decoration-2 decoration-emerald-400 font-bold text-base tracking-wide" />
+          <Cta content="View Code" css="uppercase text-white underline underline-offset-8 decoration-2 decoration-emerald-400 font-bold text-base tracking-wide ml-5" />
         </div>
       </div>
     </>

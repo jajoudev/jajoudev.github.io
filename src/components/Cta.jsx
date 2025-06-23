@@ -1,9 +1,6 @@
-function Cta({ content }) {
+function Cta({ content, css }) {
   return (
-    <a
-      className="uppercase text-white underline underline-offset-8 decoration-2 decoration-emerald-400 font-bold text-base tracking-wide"
-      href="#"
-    >
+    <a className={css} href="#">
       {content}
     </a>
   );
