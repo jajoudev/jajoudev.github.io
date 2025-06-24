@@ -19,4 +19,6 @@ jobs:
         run: npm install
       - name: Building the app
         run: npm run build
+      - name: Install Faraday-Retry
+        run: npm install faraday-retry
         
