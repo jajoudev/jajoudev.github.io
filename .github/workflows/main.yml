@@ -17,4 +17,6 @@ jobs:
         run: ls -al
       - name: Installing dependancies
         run: npm install
+      - name: Building the app
+        run: npm run build
         
