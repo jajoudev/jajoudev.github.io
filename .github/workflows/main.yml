@@ -13,6 +13,8 @@ jobs:
         run: ls -al
       - name: Checkout
         uses: actions/checkout@v4
-      - name: testing ls 
+      - name: testing ls
         run: ls -al
+      - name: Installing dependancies
+        run: npm install
         
